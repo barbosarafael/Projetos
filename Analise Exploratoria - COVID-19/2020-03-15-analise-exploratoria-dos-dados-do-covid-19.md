@@ -1,15 +1,7 @@
 Análise Exploratória dos dados do COVID-19
 ================
 Rafael Barbosa
-27 de abril, 2020 às 11:31
-
-  - [Pacotes utilizados](#pacotes-utilizados)
-  - [Configurações adicionais](#configurações-adicionais)
-  - [Carregando o banco de dados](#carregando-o-banco-de-dados)
-  - [Manuseio dos dados (by: Professora
-    Terezinha)](#manuseio-dos-dados-by-professora-terezinha)
-  - [Análise Exploratória de Dados
-    (EDA)](#análise-exploratória-de-dados-eda)
+09/03/2020
 
 ## Pacotes utilizados
 
@@ -118,3 +110,7 @@ banco %>%
 ```
 
 <img src="2020-03-15-analise-exploratoria-dos-dados-do-covid-19_files/figure-gfm/eda1-1.png" width="100%" style="display: block; margin: auto;" />
+
+``` r
+### `r format(Sys.time(), '%d de %B, %Y às %H:%M')`
+```

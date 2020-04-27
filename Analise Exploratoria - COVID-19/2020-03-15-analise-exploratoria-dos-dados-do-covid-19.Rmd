@@ -1,15 +1,13 @@
 ---
 title: Análise Exploratória dos dados do COVID-19
 author: Rafael Barbosa
-date: "`r format(Sys.time(), '%d de %B, %Y às %H:%M')`"
+date: "09/03/2020"
+always_allow_html: true
 output:
   github_document:
-    toc: true
-    toc_depth: 2
     fig_width: 10
     fig_height: 6
 ---
-
 
 
 ```{r setup, include=FALSE}
@@ -138,6 +136,9 @@ banco %>%
             filter = 'top', 
             options = list(pageLength = 5, autoWidth = TRUE)) %>% 
   formatStyle(columns = 1:4, color = "black")
+
+
+### `r format(Sys.time(), '%d de %B, %Y às %H:%M')`
 
 ```
 
