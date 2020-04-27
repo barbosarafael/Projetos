@@ -19,7 +19,7 @@ knitr::opts_chunk$set(fig.align = "center", out.width = "100%")
 ```
 
 
-## 0 - Pacotes utilizados
+## Pacotes utilizados
 
 ```{r pacotes, echo = TRUE, warning = FALSE, message = F}
 
@@ -57,7 +57,7 @@ if(!require(gifski)) {
 ```
 
 
-## 1 - Configurações adicionais
+## Configurações adicionais
 
 A `formato_real_graf` vêm do [stackoverflow](https://pt.stackoverflow.com/questions/216852/adicionar-nota%C3%A7%C3%A3o-de-moeda-em-r).
 
@@ -75,7 +75,7 @@ formato_real_graf <- function(values, nsmall = 0) { #- Formatando o valor como m
 ```
 
 
-## 2 - Carregando o banco de dados
+## Carregando o banco de dados
 
 
 Os dados estão disponíveis em <https://www.kaggle.com/unanimad/corona-virus-brazil>.
@@ -95,10 +95,10 @@ banco %>%
 ```
 
 
-## 3 - Manuseio dos dados (by: Professora Terezinha)
+## Manuseio dos dados (by: Professora Terezinha)
 
 
-### 3.1 - Renomear as colunas
+### Renomear as colunas
 
 
 ```{r estrutura_dados}
@@ -119,10 +119,10 @@ banco %>%
 ```
 
 
-## 4 - Análise Exploratória de Dados (EDA) 
+## Análise Exploratória de Dados (EDA) 
 
 
-### 4.1 - Casos suspeitos, negativos e positivos por estado (16/03)
+### Casos suspeitos, negativos e positivos por estado (16/03)
 
 ```{r eda1}
 

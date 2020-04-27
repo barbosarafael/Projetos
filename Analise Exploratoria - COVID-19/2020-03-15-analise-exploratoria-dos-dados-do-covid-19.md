@@ -1,17 +1,17 @@
 Análise Exploratória dos dados do COVID-19
 ================
 Rafael Barbosa
-27 de abril, 2020 às 11:25
+27 de abril, 2020 às 11:31
 
-  - [0 - Pacotes utilizados](#pacotes-utilizados)
-  - [1 - Configurações adicionais](#configurações-adicionais)
-  - [2 - Carregando o banco de dados](#carregando-o-banco-de-dados)
-  - [3 - Manuseio dos dados (by: Professora
+  - [Pacotes utilizados](#pacotes-utilizados)
+  - [Configurações adicionais](#configurações-adicionais)
+  - [Carregando o banco de dados](#carregando-o-banco-de-dados)
+  - [Manuseio dos dados (by: Professora
     Terezinha)](#manuseio-dos-dados-by-professora-terezinha)
-  - [4 - Análise Exploratória de Dados
+  - [Análise Exploratória de Dados
     (EDA)](#análise-exploratória-de-dados-eda)
 
-## 0 - Pacotes utilizados
+## Pacotes utilizados
 
 ``` r
 if(!require(tidyverse)) {
@@ -46,7 +46,7 @@ if(!require(gifski)) {
 }
 ```
 
-## 1 - Configurações adicionais
+## Configurações adicionais
 
 A `formato_real_graf` vêm do
 [stackoverflow](https://pt.stackoverflow.com/questions/216852/adicionar-nota%C3%A7%C3%A3o-de-moeda-em-r).
@@ -60,7 +60,7 @@ formato_real_graf <- function(values, nsmall = 0) { #- Formatando o valor como m
 }
 ```
 
-## 2 - Carregando o banco de dados
+## Carregando o banco de dados
 
 Os dados estão disponíveis em
 <https://www.kaggle.com/unanimad/corona-virus-brazil>.
@@ -78,9 +78,9 @@ banco %>%
 
 <img src="2020-03-15-analise-exploratoria-dos-dados-do-covid-19_files/figure-gfm/carregando_dados-1.png" width="100%" style="display: block; margin: auto;" />
 
-## 3 - Manuseio dos dados (by: Professora Terezinha)
+## Manuseio dos dados (by: Professora Terezinha)
 
-### 3.1 - Renomear as colunas
+### Renomear as colunas
 
 ``` r
 banco <- 
@@ -98,9 +98,9 @@ banco %>%
 
 <img src="2020-03-15-analise-exploratoria-dos-dados-do-covid-19_files/figure-gfm/estrutura_dados-1.png" width="100%" style="display: block; margin: auto;" />
 
-## 4 - Análise Exploratória de Dados (EDA)
+## Análise Exploratória de Dados (EDA)
 
-### 4.1 - Casos suspeitos, negativos e positivos por estado (16/03)
+### Casos suspeitos, negativos e positivos por estado (16/03)
 
 ``` r
 banco %>% 
