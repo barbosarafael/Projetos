@@ -18,5 +18,5 @@
 
 ## [Prevendo o preço das casas a serem vendidas](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb) (Em construção)
 
-- Python (Pandas, Numpy e Matplotlib)
+- Python (Pandas, Numpy, Matplotlib, Seaborn, Sklearn)
 - Análise Exploratória de Dados
