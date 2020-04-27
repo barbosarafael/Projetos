@@ -4,20 +4,12 @@ author: "Rafael Barbosa"
 date: "`r format(Sys.time(), '%d de %B, %Y às %H:%M')`"
 always_allow_html: true
 output:
-  github_document:
+  html_document:
+    keep_md: true
     toc: true
     toc_depth: 2
 ---
 
-# R Markdown Document
-
-Maths expression embedded in GitHub Markdown:
-
-$$
-E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
-$$
-
-with some more inline Latex $\gamma$, $\lambda$, $\theta$
 
 ```{r setup, include=FALSE}
 
@@ -260,7 +252,7 @@ banco %>%
 Agora que modificamos a variável `nova_local` podemos fazer quais são as localizações mais frequentes nos tweets.
 
 
-```{r localizacao_tweets, echo = F}
+```{r localizacao_tweets, echo = F, fig.align = "center", fig.width = 10, fig.height = 6}
 
 localizacao_tweets <- 
   banco %>%
@@ -294,7 +286,7 @@ localizacao_tweets <-
        subtitle = paste0("Tweets analisados = ", 
                          formato_real_graf(length(banco$user_id))))
 
-ggplotly(p = localizacao_tweets)
+localizacao_tweets
 
   
 ```
@@ -305,7 +297,7 @@ Podemos perceber que a maioria (esmagadora) dos tweets relacionadas a #BelemAlag
 
 ### Quantos tweets relacionados por dia (thinking) ?
 
-```{r quantidade_grafico, echo = F}
+```{r quantidade_grafico, echo = F, fig.align = "center", fig.width = 10, fig.height = 6}
 
 quantidade_grafico <- 
   tweets %>% 
@@ -328,7 +320,7 @@ quantidade_grafico <-
        title = "Quantidade de tweets por dia")
 
 
-ggplotly(p = quantidade_grafico)
+quantidade_grafico
 
 
 ```
