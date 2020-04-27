@@ -1,7 +1,7 @@
 Análise Exploratória dos dados do COVID-19
 ================
 Rafael Barbosa
-09/03/2020
+15/03/2020
 
 ## Pacotes utilizados
 
@@ -113,4 +113,50 @@ banco %>%
 
 ``` r
 ### `r format(Sys.time(), '%d de %B, %Y às %H:%M')`
+```
+
+### 4.2 - Série temporal do COVID-19
+
+``` r
+ts_gif <- 
+  banco %>% 
+  reshape2::melt(1:3) %>% 
+  group_by(Data, variable) %>%
+  summarise(soma = sum(value)) %>% 
+  magrittr::set_colnames(c("Data", "Variável", "Soma")) %>% 
+  mutate(Dia = lubridate::day(x = Data),
+         `Mês` = lubridate::month(x = Data)) %>% 
+  ggplot(data = ., aes(x = Data, y = Soma, group = `Variável`,
+                       colour = `Variável`)) +
+  geom_line(size = 1.15) +
+  geom_point(size = 1.15) +
+  scale_x_date(date_breaks = "3 day", date_labels = "%d\n%b") +
+  scale_y_continuous(labels = formato_real_graf) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        axis.title.y = element_text(colour = "black", face = "bold",
+                                    size = 14),
+        axis.title.x = element_text(colour = "black", face = "bold",
+                                    size = 14),
+        axis.text = element_text(colour = "black", size = 14),
+        strip.text.x = element_text(size = 12, colour = "black", 
+                                    face = "bold"),
+        strip.text.y = element_text(size = 12, colour = "white"),
+        legend.title = element_blank(),
+        legend.text = element_text(size = 16, color = "black"),
+        axis.line = element_line(size = 0.5, colour = "black")) +
+  labs(x = "Data", y = "Quantidade") +
+  scale_colour_manual(values = c("chartreuse2", "dodgerblue2", "firebrick2")) +
+  transition_reveal(Data) +
+  labs(x = "Data", y = "Quantidade")
+
+ts_gif
+```
+
+<img src="2020-03-15-analise-exploratoria-dos-dados-do-covid-19_files/figure-gfm/eda2-1.gif" width="100%" style="display: block; margin: auto;" />
+
+``` r
+#--- Para salvar o gif: 
+
+# anim_save(filename = "TS_Covid.gif", animation = ts_gif)
 ```
