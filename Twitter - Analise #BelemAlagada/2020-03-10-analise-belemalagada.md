@@ -1,7 +1,7 @@
 Análise da \#BelemAlagada
 ================
 Rafael Barbosa
-27 de abril, 2020 às 10:57
+09/03/2020
 
   - [Metodologia](#metodologia)
   - [Mão na massa](#mão-na-massa)
@@ -153,7 +153,7 @@ tweets <- search_tweets(q = "chuva OR #BelemAlagada", # Palavras-chave
                         geocode = "-1.404242,-48.435261,30km") # Em um raio de 40km do entroncamento
 ```
 
-Temos um banco de dados com 1296 linhas e 90 colunas, ou seja, 1296
+Temos um banco de dados com 1305 linhas e 90 colunas, ou seja, 1305
 tweets com que continham a \#BelemAlagada ou \#chuva.
 
 ### Estrutura dos dados
@@ -165,55 +165,55 @@ tweets %>%
   glimpse
 ```
 
-    ## Observations: 1,296
+    ## Observations: 1,305
     ## Variables: 90
-    ## $ user_id                 <chr> "774822296", "2731157277", "2731157277", "8...
-    ## $ status_id               <chr> "1254758483813183488", "1254667502182969344...
-    ## $ created_at              <dttm> 2020-04-27 13:05:09, 2020-04-27 07:03:37, ...
-    ## $ screen_name             <chr> "luabarrox", "maluchad", "maluchad", "phdur...
-    ## $ text                    <chr> "construir uma cena é algo muito foda porqu...
+    ## $ user_id                 <chr> "2730928648", "2730928648", "2730928648", "...
+    ## $ status_id               <chr> "1254784181290164224", "1254289169293160448...
+    ## $ created_at              <dttm> 2020-04-27 14:47:16, 2020-04-26 06:00:16, ...
+    ## $ screen_name             <chr> "garcia11__", "garcia11__", "garcia11__", "...
+    ## $ text                    <chr> "Mt chuva em NY", "Chuva em NY chegou", "Ch...
     ## $ source                  <chr> "Twitter for Android", "Twitter for Android...
-    ## $ display_text_width      <dbl> 275, 69, 25, 248, 25, 114, 19, 43, 69, 120,...
-    ## $ reply_to_status_id      <chr> NA, "1254632833504686080", NA, NA, NA, NA, ...
-    ## $ reply_to_user_id        <chr> NA, "214236476", NA, NA, NA, NA, NA, NA, NA...
-    ## $ reply_to_screen_name    <chr> NA, "rrodrigolima", NA, NA, NA, NA, NA, NA,...
-    ## $ is_quote                <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TR...
+    ## $ display_text_width      <dbl> 14, 18, 11, 40, 14, 34, 14, 37, 116, 133, 6...
+    ## $ reply_to_status_id      <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, "125478...
+    ## $ reply_to_user_id        <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, "214768...
+    ## $ reply_to_screen_name    <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, "LePint...
+    ## $ is_quote                <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, F...
     ## $ is_retweet              <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, F...
-    ## $ favorite_count          <int> 3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 3, 3, 1, 0, 0...
-    ## $ retweet_count           <int> 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0...
+    ## $ favorite_count          <int> 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0...
+    ## $ retweet_count           <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0...
     ## $ quote_count             <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
     ## $ reply_count             <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
     ## $ hashtags                <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
     ## $ symbols                 <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
-    ## $ urls_url                <list> [NA, NA, NA, NA, NA, "twitter.com/UPotigua...
-    ## $ urls_t.co               <list> [NA, NA, NA, NA, NA, "https://t.co/voT9yIE...
-    ## $ urls_expanded_url       <list> [NA, NA, NA, NA, NA, "https://twitter.com/...
-    ## $ media_url               <list> ["http://pbs.twimg.com/tweet_video_thumb/E...
-    ## $ media_t.co              <list> ["https://t.co/t2fzsBHqym", NA, NA, NA, "h...
-    ## $ media_expanded_url      <list> ["https://twitter.com/luabarrox/status/125...
-    ## $ media_type              <list> ["photo", NA, NA, NA, "photo", NA, NA, NA,...
-    ## $ ext_media_url           <list> ["http://pbs.twimg.com/tweet_video_thumb/E...
-    ## $ ext_media_t.co          <list> ["https://t.co/t2fzsBHqym", NA, NA, NA, "h...
-    ## $ ext_media_expanded_url  <list> ["https://twitter.com/luabarrox/status/125...
+    ## $ urls_url                <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ urls_t.co               <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ urls_expanded_url       <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ media_url               <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ media_t.co              <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ media_expanded_url      <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ media_type              <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ ext_media_url           <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ ext_media_t.co          <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+    ## $ ext_media_expanded_url  <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
     ## $ ext_media_type          <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
-    ## $ mentions_user_id        <list> [NA, "214236476", NA, NA, NA, NA, NA, NA, ...
-    ## $ mentions_screen_name    <list> [NA, "rrodrigolima", NA, NA, NA, NA, NA, N...
+    ## $ mentions_user_id        <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, <"214...
+    ## $ mentions_screen_name    <list> [NA, NA, NA, NA, NA, NA, NA, NA, NA, <"LeP...
     ## $ lang                    <chr> "pt", "pt", "pt", "pt", "pt", "pt", "pt", "...
-    ## $ quoted_status_id        <chr> NA, NA, NA, NA, NA, "1254587417023176707", ...
-    ## $ quoted_text             <chr> NA, NA, NA, NA, NA, "Tempestade elétrica em...
-    ## $ quoted_created_at       <dttm> NA, NA, NA, NA, NA, 2020-04-27 01:45:23, 2...
-    ## $ quoted_source           <chr> NA, NA, NA, NA, NA, "Twitter Web App", "Twi...
-    ## $ quoted_favorite_count   <int> NA, NA, NA, NA, NA, 2328, 79, NA, NA, NA, N...
-    ## $ quoted_retweet_count    <int> NA, NA, NA, NA, NA, 478, 8, NA, NA, NA, NA,...
-    ## $ quoted_user_id          <chr> NA, NA, NA, NA, NA, "789176181123715072", "...
-    ## $ quoted_screen_name      <chr> NA, NA, NA, NA, NA, "UPotiguara", "Galdino2...
-    ## $ quoted_name             <chr> NA, NA, NA, NA, NA, "Ulysses Potiguara", "S...
-    ## $ quoted_followers_count  <int> NA, NA, NA, NA, NA, 128, 849, NA, NA, NA, N...
-    ## $ quoted_friends_count    <int> NA, NA, NA, NA, NA, 15, 314, NA, NA, NA, NA...
-    ## $ quoted_statuses_count   <int> NA, NA, NA, NA, NA, 119, 1514, NA, NA, NA, ...
-    ## $ quoted_location         <chr> NA, NA, NA, NA, NA, "Belém", "", NA, NA, NA...
-    ## $ quoted_description      <chr> NA, NA, NA, NA, NA, "Full stack developer e...
-    ## $ quoted_verified         <lgl> NA, NA, NA, NA, NA, FALSE, FALSE, NA, NA, N...
+    ## $ quoted_status_id        <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_text             <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_created_at       <dttm> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA...
+    ## $ quoted_source           <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_favorite_count   <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_retweet_count    <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_user_id          <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_screen_name      <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_name             <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_followers_count  <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_friends_count    <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_statuses_count   <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_location         <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_description      <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+    ## $ quoted_verified         <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
     ## $ retweet_status_id       <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
     ## $ retweet_text            <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
     ## $ retweet_created_at      <dttm> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA...
@@ -238,25 +238,25 @@ tweets %>%
     ## $ geo_coords              <list> [<NA, NA>, <NA, NA>, <NA, NA>, <NA, NA>, <...
     ## $ coords_coords           <list> [<NA, NA>, <NA, NA>, <NA, NA>, <NA, NA>, <...
     ## $ bbox_coords             <list> [<NA, NA, NA, NA, NA, NA, NA, NA>, <NA, NA...
-    ## $ status_url              <chr> "https://twitter.com/luabarrox/status/12547...
-    ## $ name                    <chr> "blogayrinha \U0001f308", "\U0001d454\U0001...
-    ## $ location                <chr> "Belém, Brasil", "belém br", "belém br", "B...
-    ## $ description             <chr> "Libriana pertencente à casa de Corvinal, m...
-    ## $ url                     <chr> "https://t.co/l02elDFx6x", NA, NA, "https:/...
+    ## $ status_url              <chr> "https://twitter.com/garcia11__/status/1254...
+    ## $ name                    <chr> "OBJ", "OBJ", "OBJ", "OBJ", "OBJ", "OBJ", "...
+    ## $ location                <chr> "Belém, Brasil", "Belém, Brasil", "Belém, B...
+    ## $ description             <chr> "esse perfil fala de: mulher, futebol e mús...
+    ## $ url                     <chr> "https://t.co/GKPsumZOgZ", "https://t.co/GK...
     ## $ protected               <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, F...
-    ## $ followers_count         <int> 2369, 460, 460, 721, 23, 735, 200, 200, 51,...
-    ## $ friends_count           <int> 276, 449, 449, 1367, 104, 564, 174, 174, 46...
-    ## $ listed_count            <int> 97, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
-    ## $ statuses_count          <int> 149146, 7094, 7094, 13301, 893, 12112, 1868...
-    ## $ favourites_count        <int> 30066, 5562, 5562, 66000, 3472, 21350, 2522...
-    ## $ account_created_at      <dttm> 2012-08-23 00:43:32, 2014-08-01 22:57:25, ...
+    ## $ followers_count         <int> 339, 339, 339, 339, 339, 339, 339, 339, 119...
+    ## $ friends_count           <int> 601, 601, 601, 601, 601, 601, 601, 601, 243...
+    ## $ listed_count            <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 1, 1, 5, ...
+    ## $ statuses_count          <int> 25712, 25712, 25712, 25712, 25712, 25712, 2...
+    ## $ favourites_count        <int> 44331, 44331, 44331, 44331, 44331, 44331, 4...
+    ## $ account_created_at      <dttm> 2014-08-01 17:56:31, 2014-08-01 17:56:31, ...
     ## $ verified                <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, F...
-    ## $ profile_url             <chr> "https://t.co/l02elDFx6x", NA, NA, "https:/...
-    ## $ profile_expanded_url    <chr> "http://www.lesbout.com.br", NA, NA, "http:...
+    ## $ profile_url             <chr> "https://t.co/GKPsumZOgZ", "https://t.co/GK...
+    ## $ profile_expanded_url    <chr> "http://Instagram.com/ericlinho", "http://I...
     ## $ account_lang            <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
-    ## $ profile_banner_url      <chr> "https://pbs.twimg.com/profile_banners/7748...
-    ## $ profile_background_url  <chr> "http://abs.twimg.com/images/themes/theme14...
-    ## $ profile_image_url       <chr> "http://pbs.twimg.com/profile_images/124193...
+    ## $ profile_banner_url      <chr> "https://pbs.twimg.com/profile_banners/2730...
+    ## $ profile_background_url  <chr> "http://abs.twimg.com/images/themes/theme1/...
+    ## $ profile_image_url       <chr> "http://pbs.twimg.com/profile_images/125420...
 
 ### Modificação dos dados
 
@@ -286,6 +286,46 @@ location
 
 <td style="text-align:left;">
 
+Belém, Brasil
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Belém, Brasil
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Belém-PA
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Belém, Brasil
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
 Pará, Brasil
 
 </td>
@@ -296,37 +336,7 @@ Pará, Brasil
 
 <td style="text-align:left;">
 
-Belém, Brasil
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Belém, Pará
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Belém, Brasil
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Belém PA, Brasil
+BELÉM / PARÁ
 
 </td>
 
@@ -356,17 +366,7 @@ Belém, Brasil
 
 <td style="text-align:left;">
 
-belém - pa
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Guamá, Belém
+belém, pará.
 
 </td>
 
@@ -420,7 +420,7 @@ nova\_local
 
 <td style="text-align:left;">
 
-belem - para - brasil
+belem do para
 
 </td>
 
@@ -436,7 +436,7 @@ Belém
 
 <td style="text-align:left;">
 
-belem, brasil
+belem
 
 </td>
 
@@ -452,55 +452,7 @@ Belém
 
 <td style="text-align:left;">
 
-belem, brasil
-
-</td>
-
-<td style="text-align:left;">
-
-Belém
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-belem/pa
-
-</td>
-
-<td style="text-align:left;">
-
-Belém
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-belem/para
-
-</td>
-
-<td style="text-align:left;">
-
-Belém
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-ananindeua - para
+ananindeua, brasil
 
 </td>
 
@@ -516,7 +468,7 @@ Ananindeua
 
 <td style="text-align:left;">
 
-belem, brasil
+belem-para
 
 </td>
 
@@ -565,6 +517,54 @@ Belém
 <td style="text-align:left;">
 
 belem, brasil
+
+</td>
+
+<td style="text-align:left;">
+
+Belém
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+belem, brasil
+
+</td>
+
+<td style="text-align:left;">
+
+Belém
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+belem, brasil
+
+</td>
+
+<td style="text-align:left;">
+
+Belém
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+amazonia/para/belem.
 
 </td>
 
@@ -653,7 +653,7 @@ garcia11\_\_
 
 <td style="text-align:right;">
 
-7
+8
 
 </td>
 
@@ -835,7 +835,7 @@ word
 
 <td style="text-align:left;">
 
-construir
+mt
 
 </td>
 
@@ -845,7 +845,7 @@ construir
 
 <td style="text-align:left;">
 
-uma
+chuva
 
 </td>
 
@@ -855,7 +855,7 @@ uma
 
 <td style="text-align:left;">
 
-cena
+em
 
 </td>
 
@@ -865,7 +865,7 @@ cena
 
 <td style="text-align:left;">
 
-é
+ny
 
 </td>
 
@@ -875,7 +875,7 @@ cena
 
 <td style="text-align:left;">
 
-algo
+chuva
 
 </td>
 
@@ -885,7 +885,7 @@ algo
 
 <td style="text-align:left;">
 
-muito
+em
 
 </td>
 
@@ -895,7 +895,7 @@ muito
 
 <td style="text-align:left;">
 
-foda
+ny
 
 </td>
 
@@ -905,7 +905,7 @@ foda
 
 <td style="text-align:left;">
 
-porque
+chegou
 
 </td>
 
@@ -915,7 +915,7 @@ porque
 
 <td style="text-align:left;">
 
-você
+chuva
 
 </td>
 
@@ -925,7 +925,7 @@ você
 
 <td style="text-align:left;">
 
-introduzir
+em
 
 </td>
 
@@ -976,7 +976,7 @@ n
 
 <td style="text-align:right;">
 
-178
+179
 
 </td>
 
@@ -992,7 +992,7 @@ tá
 
 <td style="text-align:right;">
 
-144
+146
 
 </td>
 
@@ -1098,13 +1098,13 @@ agora
 
 <td style="text-align:left;">
 
-tudo
+nada
 
 </td>
 
 <td style="text-align:right;">
 
-55
+57
 
 </td>
 
@@ -1114,13 +1114,13 @@ tudo
 
 <td style="text-align:left;">
 
-nada
+tudo
 
 </td>
 
 <td style="text-align:right;">
 
-54
+55
 
 </td>
 
