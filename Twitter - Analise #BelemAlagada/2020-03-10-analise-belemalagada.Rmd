@@ -2,10 +2,22 @@
 title: "Análise da #BelemAlagada"
 author: "Rafael Barbosa"
 date: "`r format(Sys.time(), '%d de %B, %Y às %H:%M')`"
+always_allow_html: true
 output:
-  html_document:
-    keep_md: true
+  github_document:
+    toc: true
+    toc_depth: 2
 ---
+
+# R Markdown Document
+
+Maths expression embedded in GitHub Markdown:
+
+$$
+E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
+$$
+
+with some more inline Latex $\gamma$, $\lambda$, $\theta$
 
 ```{r setup, include=FALSE}
 
