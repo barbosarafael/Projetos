@@ -10,3 +10,11 @@
 
 - R (tidyverse, rtweet, lubridate, tidytext, abjutils, wordcloud2, tm)
 - Análise Exploratória de Dados
+- WordCloud
+
+
+## [Análise do dataset do COVID-19](https://github.com/barbosarafael/Projetos/blob/master/Analise%20Exploratoria%20-%20COVID-19/2020-03-15-analise-exploratoria-dos-dados-do-covid-19.md)
+
+- R (tidyverse, reshape2, gganimate,gifski)
+- Análise Exploratória de Dados
+- GIF
