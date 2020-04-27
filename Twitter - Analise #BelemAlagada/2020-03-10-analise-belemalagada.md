@@ -1,7 +1,7 @@
 Análise da \#BelemAlagada
 ================
 Rafael Barbosa
-27 de abril, 2020 às 10:50
+27 de abril, 2020 às 10:57
 
   - [Metodologia](#metodologia)
   - [Mão na massa](#mão-na-massa)
@@ -153,7 +153,7 @@ tweets <- search_tweets(q = "chuva OR #BelemAlagada", # Palavras-chave
                         geocode = "-1.404242,-48.435261,30km") # Em um raio de 40km do entroncamento
 ```
 
-Temos um banco de dados com 1297 linhas e 90 colunas, ou seja, 1297
+Temos um banco de dados com 1296 linhas e 90 colunas, ou seja, 1296
 tweets com que continham a \#BelemAlagada ou \#chuva.
 
 ### Estrutura dos dados
@@ -165,7 +165,7 @@ tweets %>%
   glimpse
 ```
 
-    ## Observations: 1,297
+    ## Observations: 1,296
     ## Variables: 90
     ## $ user_id                 <chr> "774822296", "2731157277", "2731157277", "8...
     ## $ status_id               <chr> "1254758483813183488", "1254667502182969344...
@@ -203,12 +203,12 @@ tweets %>%
     ## $ quoted_text             <chr> NA, NA, NA, NA, NA, "Tempestade elétrica em...
     ## $ quoted_created_at       <dttm> NA, NA, NA, NA, NA, 2020-04-27 01:45:23, 2...
     ## $ quoted_source           <chr> NA, NA, NA, NA, NA, "Twitter Web App", "Twi...
-    ## $ quoted_favorite_count   <int> NA, NA, NA, NA, NA, 2298, 79, NA, NA, NA, N...
-    ## $ quoted_retweet_count    <int> NA, NA, NA, NA, NA, 474, 8, NA, NA, NA, NA,...
+    ## $ quoted_favorite_count   <int> NA, NA, NA, NA, NA, 2328, 79, NA, NA, NA, N...
+    ## $ quoted_retweet_count    <int> NA, NA, NA, NA, NA, 478, 8, NA, NA, NA, NA,...
     ## $ quoted_user_id          <chr> NA, NA, NA, NA, NA, "789176181123715072", "...
     ## $ quoted_screen_name      <chr> NA, NA, NA, NA, NA, "UPotiguara", "Galdino2...
     ## $ quoted_name             <chr> NA, NA, NA, NA, NA, "Ulysses Potiguara", "S...
-    ## $ quoted_followers_count  <int> NA, NA, NA, NA, NA, 128, 848, NA, NA, NA, N...
+    ## $ quoted_followers_count  <int> NA, NA, NA, NA, NA, 128, 849, NA, NA, NA, N...
     ## $ quoted_friends_count    <int> NA, NA, NA, NA, NA, 15, 314, NA, NA, NA, NA...
     ## $ quoted_statuses_count   <int> NA, NA, NA, NA, NA, 119, 1514, NA, NA, NA, ...
     ## $ quoted_location         <chr> NA, NA, NA, NA, NA, "Belém", "", NA, NA, NA...
@@ -247,8 +247,8 @@ tweets %>%
     ## $ followers_count         <int> 2369, 460, 460, 721, 23, 735, 200, 200, 51,...
     ## $ friends_count           <int> 276, 449, 449, 1367, 104, 564, 174, 174, 46...
     ## $ listed_count            <int> 97, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
-    ## $ statuses_count          <int> 149145, 7094, 7094, 13301, 893, 12112, 1868...
-    ## $ favourites_count        <int> 30066, 5562, 5562, 66000, 3467, 21350, 2522...
+    ## $ statuses_count          <int> 149146, 7094, 7094, 13301, 893, 12112, 1868...
+    ## $ favourites_count        <int> 30066, 5562, 5562, 66000, 3472, 21350, 2522...
     ## $ account_created_at      <dttm> 2012-08-23 00:43:32, 2014-08-01 22:57:25, ...
     ## $ verified                <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, F...
     ## $ profile_url             <chr> "https://t.co/l02elDFx6x", NA, NA, "https:/...
@@ -286,7 +286,7 @@ location
 
 <td style="text-align:left;">
 
-Castanhal/Maraba Pa
+Pará, Brasil
 
 </td>
 
@@ -326,7 +326,7 @@ Belém, Brasil
 
 <td style="text-align:left;">
 
-Belém-PA
+Belém PA, Brasil
 
 </td>
 
@@ -420,7 +420,7 @@ nova\_local
 
 <td style="text-align:left;">
 
-belem, brasil
+belem - para - brasil
 
 </td>
 
@@ -468,7 +468,7 @@ Belém
 
 <td style="text-align:left;">
 
-belem do para - brasil
+belem/pa
 
 </td>
 
@@ -484,7 +484,7 @@ Belém
 
 <td style="text-align:left;">
 
-belem - pa - brasil
+belem/para
 
 </td>
 
@@ -992,7 +992,7 @@ tá
 
 <td style="text-align:right;">
 
-145
+144
 
 </td>
 
@@ -1134,10 +1134,10 @@ E agora podemos ver em uma nuvem de palavras, que talvez seja a
 visualização de dados mais adequada, com o pacote `wordcloud2`.
 
 ``` r
-wordcloud2(data = banco_freq, size = .7,
+wordcloud2(data = banco_freq, size = 0.6,
            shape = "oval",
            rotateRatio = 0.5,
            ellipticity = 0.9, color = "random-dark")
 ```
 
-![](2020-03-10-analise-belemalagada_files/figure-gfm/plotapeloamordegod-1.png)<!-- -->
+<img src="2020-03-10-analise-belemalagada_files/figure-gfm/plotapeloamordegod-1.png" style="display: block; margin: auto;" />

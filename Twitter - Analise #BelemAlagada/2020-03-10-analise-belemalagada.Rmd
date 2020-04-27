@@ -435,10 +435,10 @@ banco_freq %>%
 
 E agora podemos ver em uma nuvem de palavras, que talvez seja a visualização de dados mais adequada, com o pacote `wordcloud2`.
 
-```{r plotapeloamordegod}
+```{r plotapeloamordegod, fig.align = "center", fig.width = 10, fig.height = 6}
 
 
-wordcloud2(data = banco_freq, size = .7,
+wordcloud2(data = banco_freq, size = 0.6,
            shape = "oval",
            rotateRatio = 0.5,
            ellipticity = 0.9, color = "random-dark")
