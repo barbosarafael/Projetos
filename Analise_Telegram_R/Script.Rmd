@@ -1,0 +1,150 @@
+---
+title: "Análise R-Brasil (Telegram)"
+author: "Rafael Barbosa da Silva"
+date: "06/04/2020"
+output: 
+  rmarkdown::github_document:
+    fig_width: 10
+    fig_height: 5
+  theme: cosmo
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r pacotes, echo = TRUE, warning = FALSE, message = F}
+
+if(!require(tidyverse)) {
+  install.packages("tidyverse", dependencies = T);
+  require(tidyverse)
+}
+
+if(!require(httr)) {
+  install.packages("httr", dependencies = T);
+  require(httr)
+}
+
+if(!require(rvest)) {
+  install.packages("rvest", dependencies = T);
+  require(rvest)
+}
+
+if(!require(ggthemr)) {
+  install.packages("ggthemr", dependencies = T);
+  require(ggthemr)
+}
+
+
+ggthemr('fresh')
+
+
+```
+
+## Carregando os dados
+
+```{r dados }
+
+banco <- read_csv(file = "historico_conversas.csv")
+
+banco %>% 
+  head
+
+```
+
+
+## Carregando os pacotes do CRAN em um vetor
+
+```{r vetor_pacotes}
+
+`%!in%` = Negate(`%in%`)
+
+r = getOption("repos")
+r["CRAN"] = "http://cran.us.r-project.org"
+options(repos = r)
+
+y <- available.packages()
+
+vetor_pacotes <- y[, 1]
+
+vetor_pacotes %>% 
+  head
+
+```
+
+## Baixando as stopwords
+
+```{r}
+
+banco_palavras <- data.frame(word = tidytext::get_stopwords("pt")[, 1])
+
+banco_palavras %>% 
+  head
+
+```
+
+## Criando o primeiro gráfico e retirando algumas stopwords na mão
+
+
+```{r}
+
+banco %>% 
+  select(texto) %>%
+  tidytext::unnest_tokens(word, texto) %>%
+  anti_join(banco_palavras, by = "word") %>%
+  filter(word %in% vetor_pacotes) %>%
+  count(word, sort = T) %>%
+  top_n(30) %>%
+  filter(word %!in% c("boa", "usa", "pro", "tbm", "telegram", "list", "rio",
+                     "msm", "tutorial", "not", "social")) %>%
+  ggplot(data = ., aes(x = reorder(word, n), y = n)) +
+  geom_bar(stat = "identity", colour = "black") +
+  theme_bw() +
+  labs(x = "Pacote", y = "Quantidade de vezes citadas no grupo") +
+  theme(legend.position = "bottom",
+        axis.title.y = element_text(colour = "black", face = "bold", size = 12),
+        axis.title.x = element_text(colour = "black", face = "bold", size = 12),
+        axis.text = element_text(colour = "black", size = 11),
+        strip.text.x = element_text(size = 12, colour = "white"),
+        strip.text.y = element_text(size = 12, colour = "white"),
+        legend.title = element_text(size = 16, color = "black", face = "bold"),
+        legend.text = element_text(size = 16, color = "black"),
+        axis.line = element_line(size = 0.5, colour = "black"),
+        plot.caption = element_text(size = 12, color = "black",
+                                    vjust = 7),
+        plot.subtitle = element_text(size = 12, color = "black"),
+        plot.title = element_text(size = 18, face = "bold",
+                                  hjust = 0.5, color = "black")) +
+  coord_flip() +
+  scale_y_continuous(breaks = seq(0, 400, 50))
+
+```
+
+
+## Usuários com mais mensagens (de texto)
+
+```{r}
+
+banco %>%
+  count(nome, sort = T) %>%
+  filter(nome != "Deleted Account")
+```
+
+
+
+## Usuários que mais falaram sobre o pacote `shiny`
+
+```{r}
+
+banco %>%
+  tidytext::unnest_tokens(word, texto) %>%
+  anti_join(banco_palavras, by = "word") %>%
+  filter(word == "shiny",
+         nome != "Deleted Account") %>%
+  count(nome, sort = T)
+
+```
+
+O resto é com vocês. Neste [link](https://www.curso-r.com/blog/2019-09-10-rbrasil/) tem uma análise do [Júlio Trecenti](https://github.com/jtrecenti) completinha sobre o mesmo assunto.
