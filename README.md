@@ -11,9 +11,16 @@
 
 ## [Análise do dataset do COVID-19](https://github.com/barbosarafael/Projetos/blob/master/Analise%20Exploratoria%20-%20COVID-19/2020-03-15-analise-exploratoria-dos-dados-do-covid-19.md) (15/03/2020)
 
-- R (tidyverse, reshape2, gganimate,gifski)
+- R (tidyverse, reshape2, gganimate, gifski)
 - Análise Exploratória de Dados
 - GIF
+
+
+## [Retirando dados do Telegram da R-Brasil](https://github.com/barbosarafael/Projetos/blob/master/Analise_Telegram_R/Script.md) (06/04/2020)
+
+- R (tidyverse, httr, rvest, ggthemr)
+- Limpeza e transformação de dados
+- Análise exploratória de dados
 
 
 ## [Prevendo o preço das casas a serem vendidas](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb) (Em construção)
