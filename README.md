@@ -27,3 +27,5 @@
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
 - Análise Exploratória de Dados;
+- Limpeza e transformação de dados;
+- Previsão através do modelo de regressão linear múltipla
