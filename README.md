@@ -29,4 +29,4 @@
 - Análise Exploratória de Dados;
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão linear múltipla
-- [Modelo](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com o baseline.
+- [Segundo notebook](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com o baseline.
