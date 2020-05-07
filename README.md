@@ -31,7 +31,7 @@
 - Previsão através do modelo de regressão linear múltipla
 - [Segundo notebook](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com o baseline.
 
-## [Prevendo quem irá sobrebier ou não no Titanic (Competição do Kaggle)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb)(07/05/2020)
+## [Prevendo quem irá sobreviver ou não no Titanic (Competição do Kaggle)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb)(07/05/2020)
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn);
 - Análise Exploratória de Dados;
