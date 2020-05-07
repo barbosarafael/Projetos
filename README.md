@@ -23,9 +23,10 @@
 - Análise exploratória de dados.
 
 
-## [Prevendo o preço das casas a serem vendidas (Competição do Kaggle)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb) (Em aprimoramento)
+## [Prevendo o preço das casas a serem vendidas (Competição do Kaggle)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb)(07/05/2020)
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
 - Análise Exploratória de Dados;
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão linear múltipla
+- [Modelo](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com o baseline.
