@@ -1,0 +1,8 @@
+Transformação nos dados
+
+1. **Age**: Para tentar contornar esse problema de dados faltantes podemos fazer uma recodificação em faixa etária e, para os casos nulos, criar uma classe/categoria dizendo que não sabemos ("SI: Sem informação", por exemplo).
+
+2. Log na variável Fare
+
+3. **Embarked**: Aqui podemos criar uma categoria a mais também dizendo que não sabemos de qual porto a pessoa embarcou.
+
