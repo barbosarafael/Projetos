@@ -28,15 +28,15 @@
 
 ## Prevendo o preço das casas a serem vendidas (Kaggle) - 07/05/2020
 
-- [Notebook disponível](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb)
+- [Notebook disponível (baseline)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb)
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
 - Análise Exploratória de Dados;
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão linear múltipla
-- [Segundo notebook](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com a baseline.
+- [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com a baseline.
 
 ## Prevendo quem irá sobreviver ou não no Titanic (Kaggle) - Em construção
 
-- [Notebook disponível](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb)
+- [Notebook disponível (baseline)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb)
 - Python (Pandas, Numpy, Matplotlib, Seaborn);
 - Análise Exploratória de Dados;
