@@ -32,11 +32,13 @@
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
 - Análise Exploratória de Dados;
 - Limpeza e transformação de dados;
-- Previsão através do modelo de regressão linear múltipla
+- Previsão através do modelo de regressão linear múltipla;
 - [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com a baseline.
 
 ## Prevendo quem irá sobreviver ou não no Titanic (Kaggle) - Em construção
 
 - [Notebook disponível (baseline)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb)
 - Python (Pandas, Numpy, Matplotlib, Seaborn);
-- Análise Exploratória de Dados;
+- Análise exploratória de dados;
+- Limpeza e transformação de dados;
+- Previsão através do modelo de regressão logística (Acc = 0.53588).
