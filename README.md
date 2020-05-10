@@ -41,5 +41,5 @@
 - Python (Pandas, Numpy, Matplotlib, Seaborn);
 - Análise exploratória de dados;
 - Limpeza e transformação de dados;
-- Previsão através do modelo de regressão logística (Acc = 0.53588).
+- Previsão através do modelo de regressão logística (Acc validação = 0.8072, Acc Kaggle = 0.5359).
 - [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb)
