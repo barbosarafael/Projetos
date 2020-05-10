@@ -42,3 +42,4 @@
 - Análise exploratória de dados;
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão logística (Acc = 0.53588).
+- [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb)
