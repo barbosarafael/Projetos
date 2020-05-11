@@ -28,7 +28,7 @@
 
 ## Prevendo o preço das casas a serem vendidas (Kaggle) - 07/05/2020
 
-- Python (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
+- Python (Pandas, Numpy, Matplotlib, Seaborn, Statsmodels, Sklearn);
 - Análise Exploratória de Dados;
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão linear múltipla;
@@ -37,7 +37,7 @@
 
 ## Prevendo quem irá sobreviver ou não no Titanic (Kaggle) - Em construção
 
-- Python (Pandas, Numpy, Matplotlib, Seaborn);
+- Python (Pandas, Numpy, Matplotlib, Seaborn, Statsmodels, Sklearn);
 - Análise exploratória de dados;
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão logística.
