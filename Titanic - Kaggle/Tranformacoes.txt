@@ -6,3 +6,5 @@ Transformação nos dados
 
 3. **Embarked**: Aqui podemos criar uma categoria a mais também dizendo que não sabemos de qual porto a pessoa embarcou.
 
+
+class_weight = {0:0.6162, 1:0.3838}
