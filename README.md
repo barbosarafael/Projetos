@@ -42,4 +42,4 @@
 - Limpeza e transformação de dados;
 - Previsão através do modelo de regressão logística.
 - [Notebook disponível (baseline)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb) (Acc validação = 0.8072, Acc Kaggle = 0.5359)
-- [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb)
+- [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb) (Acc validação = 0.8161, Acc Kaggle = 0.5885)
