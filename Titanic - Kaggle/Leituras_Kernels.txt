@@ -1,0 +1,7 @@
+Kernel:
+
+https://www.kaggle.com/startupsci/titanic-data-science-solutions
+
+Considerações:
+
+1. 
