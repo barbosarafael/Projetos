@@ -1,7 +1,7 @@
 # Projetos
 
 
-## Análise da #BelemAlagada no Twitter - 09/03/2020
+## Análise da #BelemAlagada no Twitter
 
 - [Script disponível](https://github.com/barbosarafael/Projetos/blob/master/Twitter%20-%20Analise%20%23BelemAlagada/2020-03-10-analise-belemalagada.md);
 - R (tidyverse, rtweet, lubridate, tidytext, abjutils, wordcloud2, tm);
@@ -10,7 +10,7 @@
 - WordCloud.
 
 
-## Análise do dataset do COVID-19 - 15/03/2020
+## Análise do dataset do COVID-19
 
 - [Script disponível](https://github.com/barbosarafael/Projetos/blob/master/Analise%20Exploratoria%20-%20COVID-19/2020-03-15-analise-exploratoria-dos-dados-do-covid-19.md)
 - R (tidyverse, reshape2, gganimate, gifski);
@@ -18,7 +18,7 @@
 - GIF.
 
 
-## Retirando dados do Telegram da R-Brasil - 06/04/2020
+## Retirando dados do Telegram da R-Brasil
 
 - [Script disponível](https://github.com/barbosarafael/Projetos/blob/master/Analise_Telegram_R/Script.md)
 - R (tidyverse, httr, rvest, ggthemr);
@@ -26,7 +26,7 @@
 - Análise exploratória de dados.
 
 
-## Prevendo o preço das casas a serem vendidas (Kaggle) - 07/05/2020
+## Prevendo o preço das casas a serem vendidas (Kaggle)
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Statsmodels, Sklearn);
 - Análise Exploratória de Dados;
@@ -35,7 +35,7 @@
 - [Notebook disponível (baseline)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_house_prices.ipynb)
 - [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/House%20Prices%20-%20Advanced%20Regression%20Techniques/notebook_2.ipynb) com a melhora da métrica em comparação com a baseline.
 
-## Prevendo quem irá sobreviver ou não no Titanic (Kaggle) - Em construção
+## Prevendo quem irá sobreviver ou não no Titanic (Kaggle)
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Statsmodels, Sklearn);
 - Análise exploratória de dados;
@@ -43,3 +43,9 @@
 - Previsão através do modelo de regressão logística.
 - [Notebook disponível (baseline)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb) (Acc validação = 0.8072, Acc Kaggle = 0.5359)
 - [Segundo notebook (otimizado)](https://github.com/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb) (Acc validação = 0.8161, Acc Kaggle = 0.5885)
+
+## Hackaton iNeuron (Back order prediction)
+
+- Objetivo: Criar um app que preveja a possibilidade de pedidos em atraso para um determinado produto;
+- [Notebook Python](https://github.com/barbosarafael/Projetos/blob/master/iNeuron_Back_order_prediction_Notebook/hackaton_ineuron_back_order_prediction.ipynb) (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
+- Análise exploratória de dados
