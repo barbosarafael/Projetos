@@ -1,0 +1,43 @@
+national_inv – Current inventory level for the part (nível de estoque da peça)
+
+lead_time – Transit time for product (if available) (Tempo de trânsito para o produto)
+
+in_transit_qty – Amount of product in transit from source (Quantidade de produtos em trânsito da origem)
+
+forecast_3_month – Forecast sales for the next 3 months (Previsão de vendas para os próximos 3 meses)
+
+forecast_6_month – Forecast sales for the next 6 months (Previsão de vendas para os próximos 6 meses)
+
+forecast_9_month – Forecast sales for the next 9 months (Previsão de vendas para os próximos 9 meses)
+
+sales_1_month – Sales quantity for the prior 1 month time period (Quantidade de vendas para o período de 1 mês anterior)
+
+sales_3_month – Sales quantity for the prior 3 month time period (Quantidade de vendas para o período de 3 mês anterior)
+
+sales_6_month – Sales quantity for the prior 6 month time period (Quantidade de vendas para o período de 6 mês anterior)
+
+sales_9_month – Sales quantity for the prior 9 month time period (Quantidade de vendas para o período de 9 mês anterior)
+
+min_bank – Minimum recommend amount to stock (Quantidade mínima recomendada para estoque)
+
+potential_issue – Source issue for part identified (Problema na fonte da parte identificada)
+
+pieces_past_due – Parts overdue from source (Peças em atraso na origem)
+
+perf_6_month_avg – Source performance for prior 6 month period (Desempenho da fonte nos 6 meses anteriores)
+
+perf_12_month_avg – Source performance for prior 12 month period (Desempenho da fonte nos 12 meses anteriores)
+
+local_bo_qty – Amount of stock orders overdue (Quantidade de pedidos de estoque em atraso)
+
+deck_risk – Part risk flag (sinalizador de risco de peça)
+
+oe_constraint – Part risk flag (sinalizador de risco de peça)
+
+ppap_risk – Part risk flag (sinalizador de risco de peça)
+
+stop_auto_buy – Part risk flag (sinalizador de risco de peça)
+
+rev_stop – Part risk flag (sinalizador de risco de peça)
+
+went_on_backorder – Product actually went on backorder. This is the target value.

@@ -1,0 +1,80 @@
+Kernel:
+
+https://www.kaggle.com/shahules/tackling-class-imbalance
+
+Competição: IEEE-CIS Fraud Detection
+
+#--- Considerações iniciais:
+
+1. A variável target (isFraud) possui uma grande gama de valores 0 (não houve fraude) e poucos valores 1 (houve fraude);
+
+2. Utilizar a acurácia como métrica neste caso é uma péssima ideia, pois ela vai prever a classe majoritária na maioria dos casos;
+
+3. Descrição do que é um falso positivo e e falso negativo.
+
+*Falso positivo*: Prever um evento quando não houve um evento.
+
+Exemplo: O seu modelo preveu que aquela transação era fraudulenta, quando na verdade ela não era.
+
+*Falso negativo*: Não prever um evento quando ele realmente aconteceu.
+
+Exemplo: O seu modelo preveu que aquela transação era NÃO fraudulenta, quando na verdade ela era.
+
+Acho que um falso negativo, neste caso, é o pior pois podemos liberar X montante de dinheiro, quando na verdade vai rolar fraude;
+
+#--- Métricas a se utilizar:
+
+1. Matriz de confusão;
+2. Precision: O número de Verdadeiros Positivos dividido por todas as predições positivas que o seu modelo fez.
+
+- TP/(TP + FP)
+
+- Baixa precisão indica o grande número de Falsos Positivos.
+
+3. Recall: Número de Verdadeiros Positivos dividido por todas as predições positivas dos dados de teste (que realmente são verdade).
+
+- TP/(TP + FN)
+
+- Baixo valor de Recall indica um grande número de Falsos Negativos.
+
+4. F1-Score: Média harmônica entre precision e recall.
+
+
+#--- Técnicas de resampling (Reamostragem):
+
+1. Oversampling minority class: Adição de mais cópias da classe minoritária (poucas transações fraudulentas).
+
+- Boa ideia quando não temos grande volume de dados, pois ele irá replicar as observações da classe minoritária.
+- Sklearn
+
+
+2. Undersample majority class: Remove observações da classe majoritária (muitas transações não fraudulentas).
+
+- Boa ideia quando temos grande volume de dados
+.
+- Contra: estamos removendo informações importantes, pode fazer falta mais pra frente.
+-Sklearn
+
+3. SMOTE (Synthetic Minority Oversampling Technique):
+
+- Sintetiza (adiciona) elementos da classe minoritária, baseado naqueles que já existem;
+- Computado a partir do algoritmo K-Vizinhos mais Próximos;
+
+4. Técnicas de Algoritmos de Ensemble 
+
+- XGBoost;
+
+
+Kernel:
+
+https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets
+
+Competição: IEEE-CIS Fraud Detection
+
+#--- Considerações iniciais:
+
+1. Nunca teste modelos nos dados desbalanceados (seja eles over ou undersampled).
+
+2. Cross-validation: se quiser implementar isso, lembre-se de fazer o over ou undersampling em seus dados de treino DURANTE a validação cruzada, não antes;
+
+3. Não use a acurácia como métrica.
