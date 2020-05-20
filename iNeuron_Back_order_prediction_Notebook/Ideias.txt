@@ -1,0 +1,4 @@
+1. Pré-processamento das variáveis quantitativas, pois está dando warning na logística;
+2. Utilizar vários modelos e comparar as métricas
+3. Usar os modelos de árvore sem o pré-processamento
+4. 
