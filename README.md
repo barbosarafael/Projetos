@@ -44,7 +44,7 @@
 - [Notebook disponível (baseline)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb) (Acc validação = 0.8072, Acc Kaggle = 0.5359)
 - [Segundo notebook (otimizado)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb) (Acc validação = 0.8161, Acc Kaggle = 0.5885)
 
-## Quais a probabilidade de ter um pedido atrasado ? (Back order prediction)
+## Qual a probabilidade de ter um pedido atrasado ? (Back order prediction)
 
 - Hackaton iNeuron
 - Objetivo: Criar um app que preveja a possibilidade de pedidos em atraso para um determinado produto;
