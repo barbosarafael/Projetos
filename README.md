@@ -14,14 +14,12 @@
 - Hackaton iNeuron
 - Objetivo: Criar um app que preveja a possibilidade de pedidos em atraso para um determinado produto;
 - [Notebook Python (Parte 1)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/iNeuron_Back_order_prediction_Notebook/1parte_hackaton_ineuron_back_order_prediction.ipynb):
-
   - Entendendo o contexto dos dados;
   - Lidando com dados desbalanceados;
   - Identificando que métricas utilizar;
   - Criando uma baseline com a Regressão Logística;
   - Criando uma Análise Exploratória de Dados completa; e
   - Retirando hipóteses e relação entre as variáveis que posteriormente serão features para o modelo principal.
-
 
 ## Prevendo o preço das casas a serem vendidas (Kaggle)
 
