@@ -2,8 +2,9 @@
 
 
 <p align="center">
-  <img src="https://miro.medium.com/max/3200/0*FL03kQRXT_TFerSD" alt="drawing" width="600" height="400"/>
+  <img src="https://miro.medium.com/max/3200/0*FL03kQRXT_TFerSD" alt="drawing" width="400" height="400"/>
 
+**Créditos**: https://medium.com/@hacware/memetic-memory-what-memes-can-teach-us-about-machine-learning-a1d487cf066f
 
 </p>
 
