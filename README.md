@@ -9,6 +9,16 @@
 </p>
 
 
+## Qual a probabilidade de ter um pedido atrasado ? (Back order prediction)
+
+- Hackaton iNeuron
+- Objetivo: Criar um app que preveja a possibilidade de pedidos em atraso para um determinado produto;
+- [Notebook Python (Parte 1)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/iNeuron_Back_order_prediction_Notebook/1parte_hackaton_ineuron_back_order_prediction.ipynb) (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
+- Análise exploratória de dados;
+- Dados desbalanceados;
+- Feature Engineering
+
+
 ## Prevendo o preço das casas a serem vendidas (Kaggle)
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Statsmodels, Sklearn);
@@ -29,14 +39,6 @@
 - [Notebook disponível (baseline)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/notebook_titanic_kaggle.ipynb) (Acc validação = 0.8072, Acc Kaggle = 0.5359)
 - [Segundo notebook (otimizado)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/Titanic%20-%20Kaggle/2notebook_titanic_kaggle.ipynb) (Acc validação = 0.8161, Acc Kaggle = 0.5885)
 
-
-
-## Qual a probabilidade de ter um pedido atrasado ? (Back order prediction)
-
-- Hackaton iNeuron
-- Objetivo: Criar um app que preveja a possibilidade de pedidos em atraso para um determinado produto;
-- [Notebook Python](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/iNeuron_Back_order_prediction_Notebook/1parte_hackaton_ineuron_back_order_prediction.ipynb) (Pandas, Numpy, Matplotlib, Seaborn, Sklearn);
-- Análise exploratória de dados
 
 
 ## Análise da #BelemAlagada no Twitter
