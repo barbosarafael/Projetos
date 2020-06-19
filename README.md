@@ -12,7 +12,7 @@
 ## Qual a probabilidade de ter um pedido atrasado ? (Back order prediction)
 
 - Hackaton iNeuron
-- Objetivo: Criar um app que preveja a possibilidade de pedidos em atraso para um determinado produto;
+- Objetivo: Prever se um determinado pedido/produto irá atrasar;
 - [Notebook Python (Parte 1)](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/iNeuron_Back_order_prediction_Notebook/1parte_hackaton_ineuron_back_order_prediction.ipynb):
   - Entendendo o contexto dos dados;
   - Lidando com dados desbalanceados;
@@ -20,6 +20,14 @@
   - Criando uma baseline com a Regressão Logística;
   - Criando uma Análise Exploratória de Dados completa; e
   - Retirando hipóteses e relação entre as variáveis que posteriormente serão features para o modelo principal.
+- [Notebook Python (Parte 2)](https://nbviewer.jupyter.org/github/barbosarafael/Aprendizado-Python/blob/master/Pandas_Aprendizado/parte2_ineuron_BackOrderPrediction.ipynb)
+
+  - Tratamento de valores nulos;
+  - Criação de novas features a partir da Análise Exploratória de Dados;
+  - Aplicação da técnica de One Hot Encoding (OHE);
+  - Utilização do modelo de Random Forest e verificação de suas métricas;
+  - Aplicação de penalidade nos erros para dados desbalanceados;
+  - Validação cruzada.
 
 ## Prevendo o preço das casas a serem vendidas (Kaggle)
 
