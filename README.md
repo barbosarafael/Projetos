@@ -20,7 +20,7 @@
   - Criando uma baseline com a Regressão Logística;
   - Criando uma Análise Exploratória de Dados completa; e
   - Retirando hipóteses e relação entre as variáveis que posteriormente serão features para o modelo principal.
-- [Notebook Python (Parte 2)](https://nbviewer.jupyter.org/github/barbosarafael/Aprendizado-Python/blob/master/Pandas_Aprendizado/parte2_ineuron_BackOrderPrediction.ipynb)
+- [Notebook Python (Parte 2)](https://nbviewer.jupyter.org/github/barbosarafael/Aprendizado-Python/blob/master/Pandas_Aprendizado/parte2_ineuron_BackOrderPrediction.ipynb):
 
   - Tratamento de valores nulos;
   - Criação de novas features a partir da Análise Exploratória de Dados;
