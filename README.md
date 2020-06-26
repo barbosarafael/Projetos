@@ -10,7 +10,7 @@
 
 ## Árvore de Decisão (CART)
 
-- [Notebook](https://github.com/barbosarafael/Projetos/blob/master/Arvore_de_decisao_CART/arvore_de_decisao.ipynb) com um resumo da CART;
+- [Notebook](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/Arvore_de_decisao_CART/arvore_de_decisao.ipynb) com um resumo da CART;
 - Regressão e classificação;
 - Resumo;
 - Aplicação;
