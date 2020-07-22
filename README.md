@@ -1,12 +1,20 @@
 # Projetos de Data Science
 
-
 <p align="center">
   <img src="https://miro.medium.com/max/3200/0*FL03kQRXT_TFerSD" alt="drawing" width="300" height="300"/>
 
 **Créditos**: https://medium.com/@hacware/memetic-memory-what-memes-can-teach-us-about-machine-learning-a1d487cf066f
 
 </p>
+
+## Árvore de Decisão (CART)
+
+- [Notebook](https://nbviewer.jupyter.org/github/barbosarafael/Projetos/blob/master/Arvore_de_decisao_CART/arvore_de_decisao.ipynb) com um resumo da CART;
+- Regressão e classificação;
+- Resumo;
+- Aplicação;
+- Grid e Random Search.
+
 
 
 ## Qual a probabilidade de ter um pedido atrasado ? (Back order prediction)
